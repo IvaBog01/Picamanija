@@ -1,10 +1,10 @@
-/* Poruci */
+/* Poruci, proverava da li su podaci uneti i da li su ispravno uneti u formu */
 
 function validacija() {
   
     /* Javlja poruku korisniku ako nije popunio polje za ime i prezime */
     if (document.forms[0].ime.value=='') {
-      alert("Niste uneli Vase ime i prezime!");
+      alert("Niste uneli ime i prezime!");
       document.forms[0].ime.focus();
       return false;
     }
@@ -25,14 +25,14 @@ function validacija() {
         
     /* Javlja poruku korisniku ako nije popunio polje za broj telefona */
     if (document.forms[0].telefon.value=='') {
-      alert("Niste uneli Vas broj telefona!");
+      alert("Niste uneli broj telefona!");
       document.forms[0].telefon.focus();
       return false;
     }
     
     /* Javlja poruku korisniku ako nije popunio polje za adresu */
     if (document.forms[0].adresa.value=='') {
-      alert("Niste uneli Vasu adresu!");
+      alert("Niste uneli adresu!");
       document.forms[0].adresa.focus();
       return false;
     }
@@ -44,14 +44,15 @@ function validacija() {
       return false;
     }
   
-    
+    /* Kada klikne na Poruci izlazi pitanje */
     confirm("Da li želite da završite sa poručivanjem?");
+    /* Kada klikne na ok na prethodno pitanje izlazi poruka */
     alert("Uspešno ste poručili Vaše jelo! Želimo Vam ukusan ostatak dana! :)");
     
   }
   
   
-  /* Proveri podatke, prvo su skriveni pa se posle kopira sadrzaj iz poja u formi */
+  /* Proveri podatke dugme, prvo su skriveni svi podaci pa se posle kopira sadrzaj iz poja u formi u njih i oni se pokazuju */
   
   function proveri() {
     $(document).ready(function(){

@@ -305,9 +305,6 @@ input, select, button {
 #lok{
     border-radius: 25px;
 }
-#bob{
-    border-radius: 25px;
-}
 .kraj{
     text-align: center;
     height: 250px;
@@ -322,9 +319,15 @@ input, select, button {
 /* Responzivnost */
 @media only screen and (min-width: 360px) and (max-width: 740px){
     .podvrste{
-        width: 100px;
+        width: cover;
         font-size: 10px;
         padding: none;
+    }
+    .kraj{
+       width: cover; height: cover;
+    }
+    .footer{
+        display: none;
     }
     #tekstONama{
         width: 300px;
@@ -336,6 +339,11 @@ input, select, button {
     }
     .sadržaj{
         height: 800px;
+    }
+    .tekstkontakt{
+        width: 300px;
+        font-size: 10px;
+        left: 17px;
     }
     #mapica{
         width: 150px;
@@ -352,7 +360,7 @@ input, select, button {
         font-size: 10px;
     }
     #myForm{
-        width: 150px;
+        width: cover;
     }
     #dos{
         position: absolute;
